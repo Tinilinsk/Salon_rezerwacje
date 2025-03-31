@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="rezerwacja.php" method="post">
+        <label for="usluga">Wybierz usługę:</label>
+        <select name="usluga" id="usluga">
+        <option value="manicure">Manicure</option>
+        <option value="pedicure">Pedicure</option>
+        <option value="masaz">Masaż</option>
+        </select>
+        <input type="text" name="imie" id="imie" placeholder="imię">
+        <input type="text" name="nazwisko" id="nazwisko" placeholder="nazwisko">
+        <input type="number" name="telefon" id="telefon" placeholder="numer telefonu">
+        <input type="date" name="data_rez" id="data_rez" placeholder="data">
+        <input type="button" value="Sybmit">
+    </form>
 </body>
 </html>
