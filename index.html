@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Urody</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
-    <title>Document</title>
 </head>
 <body>
-    <form action="rezerwacja.php" method="post">
-        <label for="usluga">Wybierz usługę:</label>
-        <select name="usluga" id="usluga">
-        <option value="manicure">Manicure</option>
-        <option value="pedicure">Pedicure</option>
-        <option value="masaz">Masaż</option>
-        </select>
-        <input type="text" name="imie" id="imie" placeholder="imię">
-        <input type="text" name="nazwisko" id="nazwisko" placeholder="nazwisko">
-        <input type="number" name="telefon" id="telefon" placeholder="numer telefonu">
-        <input type="date" name="data_rez" id="data_rez" placeholder="data">
-        <input type="button" value="Sybmit">
-    </form>
+    <header>
+        <h1>Salon Urody</h1>
+        <p>Umów się na wizytę online!</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Formularz rezerwacji</h2>
+        <form action="rezerwacja.php" method="POST">
+            <label>Usługa:</label>
+            <select name="usluga" required>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="masaż">Masaż</option>
+            </select>
+
+            <label>Imię:</label>
+            <input type="text" name="imie" required>
+
+            <label>Nazwisko:</label>
+            <input type="text" name="nazwisko" required>
+
+            <label>Telefon:</label>
+            <input type="text" name="telefon" required>
+
+            <label>Termin wizyty:</label>
+            <input type="datetime-local" name="termin" required>
+
+            <button type="submit">Zarezerwuj</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Salon Urody. Wszystkie prawa zastrzeżone.</p>
+        <a href="admin.php" class="admin-link">Panel admina</a>
+    </footer>
 </body>
 </html>
+
