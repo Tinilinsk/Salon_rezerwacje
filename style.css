@@ -58,11 +58,12 @@ button:hover {
 }
 
 footer {
+    /* position: fixed; */
     text-align: center;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.85);
-    position: fixed;
     width: 100%;
+    margin-top: 50px;
     bottom: 0;
 }
 

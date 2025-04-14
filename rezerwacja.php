@@ -15,6 +15,7 @@ $stmt->bind_param("sssss", $usluga, $imie, $nazwisko, $telefon, $termin);
 
 if ($stmt->execute()) {
     echo "Rezerwacja zapisana!";
+    header("location: index.html");
 } else {
     echo "Błąd zapisu!";
 }

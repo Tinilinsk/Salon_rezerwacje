@@ -2,6 +2,7 @@
 session_start();
 require 'db_config.php';
 
+echo "<a href='index.html'>Home</a><br><br>";
 if (isset($_POST['login']) && isset($_POST['haslo'])) {
     $login = $_POST['login'];
     $haslo = $_POST['haslo'];
@@ -26,6 +27,9 @@ if (isset($_POST['login']) && isset($_POST['haslo'])) {
         echo "Nie ma takiego użytkownika!";
     }
 }
+
+
+
 ?>
 
 <h2>Logowanie do panelu admina</h2>
